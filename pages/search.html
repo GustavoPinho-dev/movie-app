@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="../js/app.js" defer></script>
+    <script src="../js/search.js" defer></script>
+    <title>Search</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo">Devflix</h1></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movie</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <a href="/pages/search.html" title="Search"><i class="left-menu-icon fas fa-search"></i></a>
+        <a href="/index.html" title="Home"><i class="left-menu-icon fas fa-home"></i></a>
+        <i class="left-menu-icon fas fa-fire"></i>
+        <i class="left-menu-icon fas fa-star"></i>
+        <a href="/pages/series.html" title="TV Series"><i class="left-menu-icon fas fa-tv"></i></a>
+    </div>
+
+    <div class="container">
+        <div id="option-search" class="option-search">
+            <button class="option-selected" onclick="optionMovies()" id="option-movies">Movies</button>
+            <button onclick="optionSeries()" id="option-series">Series</button>
+        </div>
+        
+        <form action="" id="form">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search" placeholder="Search" class="search">
+        </form>
+        
+        <div class="content-container">
+            <main id="main"></main>
+        </div>
+
+        <div class="details" id="details"></div>
+    </div>
+</body>
+</html>
